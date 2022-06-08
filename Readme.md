@@ -1,1 +1,2 @@
-Nesse repositório você encontra alguns programas desenvolvidos na linguagem de programação C.
+## Hey there!
+Here you're gonna find some algorithms developed using C.
