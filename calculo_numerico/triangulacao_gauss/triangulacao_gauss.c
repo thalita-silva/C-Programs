@@ -34,12 +34,10 @@ float **criar_matriz(int tam)
 	while(fgets(linhas,LINHAS,csv_entrada) != NULL)
 	{
 		x1 = strtok(linhas,",");
-		//printf("%s ",x1);
 		matriz[l][0] = atof(x1);
 		for(i=1;i<=tam;i++)
 		{
 			x[i] = strtok(NULL,",");
-			//printf("%s ",x[i]);
 			matriz[l][i] = atof(x[i]);
 		}
 		l++;
