@@ -5,7 +5,7 @@
 int tam_matriz()
 {
 	char linhas[LINHAS];
-	FILE *csv_entrada = fopen("matriz_triangularizacao.csv","r");
+	FILE *csv_entrada = fopen("input_file.csv","r");
 	int total_linhas_arq = 0;
 	if(csv_entrada)
 	{
@@ -23,7 +23,7 @@ int tam_matriz()
 float **criar_matriz(int tam)
 {
 	char linhas[LINHAS], *x[tam],*x1;
-	FILE *csv_entrada = fopen("matriz_triangularizacao.csv","r");
+	FILE *csv_entrada = fopen("input_file.csv","r");
 	int i = 0, l = 0, k = 0,c = 0,tam_total = tam + 1;
 	float **matriz = (float **) malloc(tam * sizeof(float*));
 	
@@ -108,6 +108,7 @@ void solucao(int tam, float **matriz)
 }
 int main()
 {
+	//header csv: n1,n2,n3,res
 	int tam = tam_matriz();
 	float **matriz = criar_matriz(tam);
 	triangulacao(tam,matriz);
