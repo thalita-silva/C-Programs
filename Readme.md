@@ -8,5 +8,6 @@
 * Sort Simples;
 * Triangulação de Gauss (Leitura de arquivo CSV);
 * Eliminação de Gauss Jordan (Leitura de arquivo CSV);
+* Resolução - Torre de Hanoi com recursividade;
 * Jantar dos Filosófos com semáforos.
 
